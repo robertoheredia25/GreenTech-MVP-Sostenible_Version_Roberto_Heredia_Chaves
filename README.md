@@ -1,4 +1,4 @@
-GreenTech Landing Page — Refactorización
+## 🌱GreenTech Landing Page — Refactorización
 Qué hice
 
 Hice que la landing page fuera más rápida y ligera quitando cosas que no se necesitaban.
