@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salvemos el Planeta - GreenTech</title>
+  <style>
+/* Color boton*/
+
+    :root {
+      --verde: #28a745;
+      --verde-oscuro: #1e7e34;
+    }
+/* Para que no tengamos margenes ni nada extraño*/
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+/* Aqui tenemos el tipo de letra  para el body y el color*/
+    body {
+      font-family: "Montserrat", sans-serif;
+      background-color: #f4fdf4;
+    }
+/* Aqui tenemos el estilo para la seccion hero */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+/* Aqui tenemos el estilo para la imagen dle fondo*/
+    .hero img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      filter: brightness(0.6);
+    }
+/* Aqui configuracion de titulos y parrafos*/
+    h1 {
+      font-size: clamp(2.5rem, 8vw, 5rem);
+      font-weight: 700;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    }
+
+    p {
+      font-size: clamp(1.2rem, 3vw, 1.5rem);
+      margin-top: 15px;
+    }
+/* Aqui la configuracion del boton*/
+    .btn {
+      margin-top: 30px;
+      padding: 15px 35px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 50px;
+      background-color: var(--verde);
+      color: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+/* Para que cambie el boton al poner el cursor encima*/
+    .btn:hover {
+      box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+      background-color: var(--verde-oscuro);
+    }
+/* Configuracion o estilo de la seccion footer*/
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #111;
+      color: white;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <img 
+      src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=1200&auto=format&fit=crop" 
+      alt="Naturaleza verde"
+      loading="lazy"
+      decoding="async"
+    >
+
+    <h1>Salvemos el Planeta</h1>
+    <p>Únete a la revolución verde de GreenTech.</p>
+
+    <button class="btn">🌱 Quiero ayudar</button>
+  </section>
+
+  <footer id="footer"></footer>
+
+  <script>
+    document.getElementById('footer').textContent =
+      `GreenTech Solutions © ${new Date().getFullYear()} - Haciendo un mundo mejor`;
+  </script>
+
+</body>
+</body>
+</html>
